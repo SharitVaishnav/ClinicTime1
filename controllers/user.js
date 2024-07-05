@@ -19,7 +19,7 @@ exports.user = async (req,res) =>{
         // send mail with defined transport object
         const info = await transporter.sendMail({
           from: process.env.EMAIL_USER, // sender address
-          to: ["gopala2846@gmail.com","bt22cse159@iiitn.ac.in"], // list of receivers
+          to: ["gopala2846@gmail.com","bt22cse159@iiitn.ac.in","nandiniayurvedics@gmail.com"], // list of receivers
           subject: "Client", // Subject line
           text: `A client named ${name} appointed you for the checkup on ${date}.
           His email : ${email},
