@@ -17,7 +17,7 @@ const route = require('./routes/routes');
 app.use("/v1",route);
 
 app.get('*',(req,res) => {
-    res.sendFile(path.join(__dirname,'build','index.html');
+    res.sendFile(path.join(__dirname,'build','index.html'));
 });
 
 
