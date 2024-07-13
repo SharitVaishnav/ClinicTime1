@@ -9,9 +9,6 @@ app.use(express.static("build"))
 require('dotenv').config();
 
 
-const connect = require("./config/database");
-connect();
-
 
 const route = require('./routes/routes');
 app.use("/v1",route);
