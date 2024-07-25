@@ -1,0 +1,43 @@
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  transition: transform 1s ease;
+}
+
+.slide.active {
+  display: block;
+  width: 100%;
+}
+
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
